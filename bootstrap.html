@@ -1,32 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Bootstrap| Stats preview card component</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+<title>Bootstrap Stats Card</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+background:#0a0c1b;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family: Arial, sans-serif;
+margin:0;
+}
+
+.card-main{
+background:#1c1938;
+border-radius:10px;
+overflow:hidden;
+max-width:1000px;
+width:90%;
+}
+
+.text-section{
+padding:60px;
+color:white;
+}
+
+.highlight{
+color:#aa5cdb;
+}
+
+.description{
+color:rgba(255,255,255,0.7);
+margin-top:20px;
+}
+
+.stats{
+margin-top:40px;
+}
+
+.stats h2{
+font-weight:bold;
+}
+
+.stats p{
+font-size:12px;
+letter-spacing:2px;
+color:rgba(255,255,255,0.6);
+}
+
+.image-section{
+position:relative;
+}
+
+.image-section img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#aa5cdb;
+opacity:0.5;
+}
+
+</style>
+
 </head>
+
 <body>
 
-  Get insights that help your business grow.
+<div class="card-main">
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+<div class="row g-0 flex-lg-row flex-column-reverse">
 
-  10k+ companies
-  314 templates
-  12m+ queries
+<div class="col-lg-6 text-section">
 
-  <div class="attribution">
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<h1>
+Get <span class="highlight">insights</span> that help your business grow.
+</h1>
+
+<p class="description">
+Discover the benefits of data analytics and make better decisions regarding revenue,
+customer experience, and overall efficiency.
+</p>
+
+<div class="row stats text-center text-lg-start">
+
+<div class="col">
+<h2>10k+</h2>
+<p>COMPANIES</p>
+</div>
+
+<div class="col">
+<h2>314</h2>
+<p>TEMPLATES</p>
+</div>
+
+<div class="col">
+<h2>12M+</h2>
+<p>QUERIES</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-6 image-section">
+
+<img src="./images/image-header-desktop.jpg" alt="header">
+
+<div class="overlay"></div>
+
+</div>
+
+</div>
+
+</div>
+
 </body>
 </html>
